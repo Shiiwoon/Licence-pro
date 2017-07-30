@@ -10,14 +10,23 @@
     Syntax : re.search('motif','chaineDeCaractère')
     
     Exemple : 
-    ch=["Wagateki wo kurauu","Ryuujin no kaioken","Heros's Never Die"]
-    re.search('uu','ch') # Recherche les chaine de caractères contenant 'uu'
+    ch=["Wagateki wo kurauu","Ryuujin no kaioken","Heroes's Never Die"]
+    re.search('uu','ch') # Recherche les chaine de caractères contenant 'uu' dans ch
+
+#### Sub
+>**Def** : Permet de remplacer une expression dans une chaine de caractère
+
+    Syntax : re.sub('motif à changer','motif final',chaine_de_caractère)
     
--   Sub
--   FindAll
--   Compile
--   Match
--   Split
+    Exemple : 
+    ch=["J'ai toujours admiré les boulanger"]
+    re.sub('admiré','détesté',ch) # Remplace "toujours" par "jamais"
+    
+
+* findAll
+* Compile
+* Match
+* Split
 
 
 ## Racourci :
@@ -66,7 +75,7 @@ Exemple:
         '^[xyz]' > Commence par x ou y ou z   
         '[A-Z]' > Chaine ayant uniquement des majuscules
         
--   **|** : Caractère possible
+-   **(x|x)** : Caractère possible
 
 Exemple:
 
@@ -86,14 +95,14 @@ Exemple:
 Exemple:
 
         'Gr(.)+s' > Gras,GrRyuujin no kaiokens, ect
-        'w(.)?w' > www, wit's high noonw, ect
+        'w(.)+w' > www, wit's high noonw, ect
         
 -   **\*** : Quantificateur 0 ou 1 ou plus
 
 Exemple:
-
-        'Gr(.)?s' > Grs, Gras, GrRyuujin no kaiokens
-        'w(.)?w' > ww, www, wit's high noonw, ect 
+                            
+        'Gr(.)*s' > Grs, Gras, GrRyuujin no kaiokens
+        'w(.)*w' > ww, www, wit's high noonw, ect 
         
 -   **{}** : Quantificateur personalisable
 
@@ -102,7 +111,7 @@ Exemple:
 
         'w{3}' > www  / w qui ce répète exatement 3 fois de suite
         '(Die ){3}' > Die Die Die / Groupe de caractère Die' ' qui ce répète 3 fois de suite
-        '(ll){1,2}' > file, fille // Groupe de caractère ll qui ce répète 1 à 2 fois de suite
+        '(l){1,2}' > file, fille // Groupe de caractère ll qui ce répète 1 à 2 fois de suite
         'u{,10}' > lol(0fois), bruh(1fois), gruu(2fois),...,Muuuuuuuuuugen(10fois) // Caractère u ce répète de 0 à 10 fois
         'a{1,}' > a, laa, yaaa, ect // Caractère a qui ce répète au moins 1 fois
         

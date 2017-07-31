@@ -16,7 +16,7 @@ keys : Trés bien ! keys est une qui renvoie une liste contenant toutes les clé
 autres cas : On recherche les clées 
 
 ## Qu'affiche le code ci-dessous ?
-    ParcInfo = {"2105U":"Bureau A201" , "3745S":"Bureau B214" , "1857T":"Bureau B325" , "7485V":"Bureau C204",             "3257V":"Bureau B214"}
+    ParcInfo = {"2105U":"Bureau A201" , "3745S":"Bureau B214" , "1857T":"Bureau B325" , "7485V":"Bureau C204","3257V":"Bureau B214"}
     if "7485V" in ParcInfo.keys() :
     print (ParcInfo["7485V"])
  

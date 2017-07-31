@@ -23,4 +23,5 @@ autres cas : On recherche les clées
  
     Votre réponse :
 Bureau C204: Bravo ! Ici on vérifie si la clé 7485V est dans ParcInfo, si elle existe on affiche sa valeur.
+
 Autres cas : Comment tu afficherais la valeur de '7485V' toi ?  

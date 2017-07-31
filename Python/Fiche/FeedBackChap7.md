@@ -4,6 +4,7 @@
     
     Votre choix : 
 Le système clé-valeur : Bien ! Les dictionnaires sont indexés par des clés textuelles qui ont du sens !
+
 Autres cas : Retourne voir l'introduction de la leçon ;)
 
 
@@ -13,7 +14,8 @@ Autres cas : Retourne voir l'introduction de la leçon ;)
     Votre choix : 
     
 keys : Trés bien ! keys est une qui renvoie une liste contenant toutes les clés du dictionnaire
-autres cas : On recherche les clées 
+
+Autres cas : On recherche les clées 
 
 ## Qu'affiche le code ci-dessous ?
     ParcInfo = {"2105U":"Bureau A201" , "3745S":"Bureau B214" , "1857T":"Bureau B325" ,
